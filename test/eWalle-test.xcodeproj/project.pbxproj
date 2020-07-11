@@ -9,22 +9,24 @@
 /* Begin PBXBuildFile section */
 		F72BA4A824B9EB73000A3F8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BA4A724B9EB73000A3F8D /* AppDelegate.swift */; };
 		F72BA4AA24B9EB73000A3F8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BA4A924B9EB73000A3F8D /* SceneDelegate.swift */; };
-		F72BA4AC24B9EB73000A3F8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BA4AB24B9EB73000A3F8D /* ViewController.swift */; };
+		F72BA4AC24B9EB73000A3F8D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BA4AB24B9EB73000A3F8D /* LoginViewController.swift */; };
 		F72BA4AF24B9EB73000A3F8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72BA4AD24B9EB73000A3F8D /* Main.storyboard */; };
 		F72BA4B124B9EB74000A3F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72BA4B024B9EB74000A3F8D /* Assets.xcassets */; };
 		F72BA4B424B9EB74000A3F8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72BA4B224B9EB74000A3F8D /* LaunchScreen.storyboard */; };
+		F72BA4BE24BA253E000A3F8D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BA4BD24BA253E000A3F8D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F72BA4A424B9EB73000A3F8D /* eWalle-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eWalle-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72BA4A724B9EB73000A3F8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F72BA4A924B9EB73000A3F8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F72BA4AB24B9EB73000A3F8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F72BA4AB24B9EB73000A3F8D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F72BA4AE24B9EB73000A3F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F72BA4B024B9EB74000A3F8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72BA4B324B9EB74000A3F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72BA4B524B9EB74000A3F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72BA4BC24BA1AE2000A3F8D /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		F72BA4BD24BA253E000A3F8D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 				F72BA4BB24BA1AA2000A3F8D /* Font */,
 				F72BA4A724B9EB73000A3F8D /* AppDelegate.swift */,
 				F72BA4A924B9EB73000A3F8D /* SceneDelegate.swift */,
-				F72BA4AB24B9EB73000A3F8D /* ViewController.swift */,
+				F72BA4AB24B9EB73000A3F8D /* LoginViewController.swift */,
+				F72BA4BD24BA253E000A3F8D /* HomeViewController.swift */,
 				F72BA4AD24B9EB73000A3F8D /* Main.storyboard */,
 				F72BA4B024B9EB74000A3F8D /* Assets.xcassets */,
 				F72BA4B224B9EB74000A3F8D /* LaunchScreen.storyboard */,
@@ -147,9 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F72BA4AC24B9EB73000A3F8D /* ViewController.swift in Sources */,
+				F72BA4AC24B9EB73000A3F8D /* LoginViewController.swift in Sources */,
 				F72BA4A824B9EB73000A3F8D /* AppDelegate.swift in Sources */,
 				F72BA4AA24B9EB73000A3F8D /* SceneDelegate.swift in Sources */,
+				F72BA4BE24BA253E000A3F8D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

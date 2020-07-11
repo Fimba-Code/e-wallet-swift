@@ -4,30 +4,145 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eWalle_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="eWalle_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-bar" translatesAutoresizingMaskIntoConstraints="NO" id="ic5-sy-5xQ">
-                                <rect key="frame" x="0.0" y="-2" width="222" height="901"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-bar" translatesAutoresizingMaskIntoConstraints="NO" id="ic5-sy-5xQ">
+                                <rect key="frame" x="0.0" y="0.0" width="222" height="898"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="9Ec-aH-q0r">
+                                <rect key="frame" x="185" y="60" width="190" height="58"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wWP-uA-vVb">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06:20 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vui-M6-eFE">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="IwZ-7L-g0U"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fUU-ht-IO3">
+                                                <rect key="frame" x="129" y="0.0" width="61" height="33"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange-cloud" translatesAutoresizingMaskIntoConstraints="NO" id="I3L-JX-rYk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="33"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="18" id="cKK-6k-iO7"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34º C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKL-qr-nfd">
+                                                        <rect key="frame" x="26" y="0.0" width="35" height="33"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nov.10.2020 | Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AJ-dE-OV3">
+                                        <rect key="frame" x="0.0" y="40" width="190" height="18"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                        <color key="textColor" name="Gray Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-d9-X0S">
+                                <rect key="frame" x="185" y="303" width="190" height="201"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-WP-7fP">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="61" id="bmY-NK-4uQ"/>
+                                            <constraint firstAttribute="height" constant="40" id="syt-MY-yXw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eWalle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox1-QG-gZa">
+                                        <rect key="frame" x="0.0" y="56" width="82.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBs-80-ELO">
+                                        <rect key="frame" x="0.0" y="105" width="189" height="96"/>
+                                        <string key="text">Open An Account For Digital E-Wallet Solutions. Instant Payouts. 
+
+Join For Free.</string>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" name="Gray Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbN-Mh-Pa6">
+                                <rect key="frame" x="185" y="718" width="190" height="50"/>
+                                <color key="backgroundColor" name="Orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GwD-Fa-458"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in" image="sign-in">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginOnTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HK2-8j-kth"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amq-Ia-Fqf">
+                                <rect key="frame" x="185" y="798" width="190" height="34"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Create an account">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ic5-sy-5xQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-2" id="ATv-l2-4fX"/>
+                            <constraint firstItem="mbN-Mh-Pa6" firstAttribute="top" relation="lessThanOrEqual" secondItem="1gy-d9-X0S" secondAttribute="bottom" constant="215.5" id="7Nc-Dr-wnL"/>
+                            <constraint firstAttribute="bottom" secondItem="ic5-sy-5xQ" secondAttribute="bottom" constant="-2" id="CLH-jL-q5K"/>
+                            <constraint firstItem="mbN-Mh-Pa6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="EfK-86-UiT"/>
+                            <constraint firstItem="ic5-sy-5xQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FCC-TT-CZM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="amq-Ia-Fqf" secondAttribute="bottom" constant="30" id="QiC-9k-ll0"/>
+                            <constraint firstItem="9Ec-aH-q0r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="R91-8f-DGM"/>
+                            <constraint firstItem="amq-Ia-Fqf" firstAttribute="top" secondItem="mbN-Mh-Pa6" secondAttribute="bottom" constant="30" id="Vcy-R5-OhE"/>
+                            <constraint firstAttribute="trailing" secondItem="1gy-d9-X0S" secondAttribute="trailing" constant="39" id="Vvq-Vo-nIV"/>
+                            <constraint firstItem="1gy-d9-X0S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="cbk-Jv-LSz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Ec-aH-q0r" secondAttribute="trailing" constant="39" id="dDe-He-lgo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="amq-Ia-Fqf" secondAttribute="trailing" constant="39" id="dRv-f7-2mZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mbN-Mh-Pa6" secondAttribute="trailing" constant="39" id="fPS-Pg-nRz"/>
                             <constraint firstItem="ic5-sy-5xQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gXT-aI-cKm"/>
+                            <constraint firstItem="1gy-d9-X0S" firstAttribute="top" relation="lessThanOrEqual" secondItem="9Ec-aH-q0r" secondAttribute="bottom" constant="185" id="gsJ-ks-J6j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ic5-sy-5xQ" secondAttribute="trailing" constant="192" id="tiT-6l-dG4"/>
-                            <constraint firstAttribute="bottom" secondItem="ic5-sy-5xQ" secondAttribute="bottom" constant="-3" id="uCB-l6-Xnd"/>
+                            <constraint firstItem="amq-Ia-Fqf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="wf2-DZ-rxk"/>
+                            <constraint firstItem="9Ec-aH-q0r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="xmt-cA-bpk"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -35,9 +150,34 @@
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="UZt-p7-gjf">
+            <objects>
+                <viewController id="Pch-mz-1e4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8d9-em-jPA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iVd-rD-3ik"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LGB-uZ-A0h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUa-cR-4K7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="139"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="logo" width="61" height="40"/>
+        <image name="orange-cloud" width="18" height="13"/>
         <image name="right-bar" width="201" height="812"/>
+        <image name="sign-in" width="15.5" height="8"/>
+        <namedColor name="Gray Text">
+            <color red="0.4823529411764706" green="0.49803921568627452" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange">
+            <color red="1" green="0.67450980392156867" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
