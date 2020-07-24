@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  eWalle-test
+//  e-Walle
 //
-//  Created by Marcos Vicente on 11.07.2020.
+//  Created by Marcos Vicente on 24.07.2020.
 //
 
 import UIKit
